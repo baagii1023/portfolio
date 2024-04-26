@@ -53,6 +53,7 @@ const services = [
     icon: ux,
   },
 ];
+
 const technologies = [
   {
     name: 'HTML 5',

@@ -109,7 +109,7 @@ const Hero = () => {
             lg:ml-[75vw] md:ml-[60vw] xmd:ml-[60vw] 2xl:ml-[83vw]
             sm:h-[90vh] md:h-[100vh] xl:h-[100vh]"
             src={Baagii_black}
-            alt="shaquille"
+            alt="Baagii photo"
           />
         </div>
       </section>

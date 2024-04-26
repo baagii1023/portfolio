@@ -9,8 +9,8 @@ import Baagii_black from './personal/Baagii_black.jpg';
 //backgrounds
 import bwmap from './backgrounds/bw-map.jpeg';
 import worldmap from './backgrounds/world-map.png';
-import nairobi from './backgrounds/nairobi.png';
 import whiteabstract from './backgrounds/white-abstract.png';
+import vancouver from './backgrounds/vancouver.png';
 //About
 import backend from './icons/backend.png';
 import ux from './icons/ux.png';
@@ -45,7 +45,7 @@ export {
     Baagii_black,
     bwmap,
     worldmap,
-    nairobi,
+    vancouver,
     whiteabstract,
     backend,
     ux,

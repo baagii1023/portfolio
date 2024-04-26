@@ -41,10 +41,10 @@ const About = ({index}) => {
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
-        I'm Byambabayar Baagii Avirmed, a driven Junior Front-End Web Developer currently pursuing my education at BCIT in Vancouver, BC, with graduation anticipated in May. Proficient in HTML, CSS, JavaScript, and various frameworks such as React and WordPress, I specialize in crafting visually captivating and user-friendly interfaces. My portfolio showcases projects that demonstrate my commitment to delivering high-quality web experiences, alongside problem-solving skills and a collaborative approach.
+        I'm Byambabayar Baagii Avirmed, a driven Junior Front-End Web Developer currently pursuing my education at BCIT in Vancouver, BC, with graduation anticipated in May. Proficient in HTML, CSS, JavaScript, Tailwind, and various frameworks such as React and WordPress, I specialize in crafting visually captivating and user-friendly interfaces. My portfolio showcases projects that demonstrate my commitment to delivering high-quality web experiences, alongside problem-solving skills and a collaborative approach.
       </motion.p>
       <motion.div variants={fadeIn('', '', 1.5, 1)}>
-        <div ref={container} id="animation-container"></div>
+        <div ref={container} id="animation-container" className="hidden 2xl:block"></div>
       </motion.div>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
