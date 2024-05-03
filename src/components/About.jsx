@@ -23,14 +23,14 @@ const About = ({index}) => {
     }
     // Adjust the size of the container element
     if (container.current) {
-      container.current.style.width = '700px'; // Set the width to your desired value
-      container.current.style.height = '700px'; // Set the height to your desired value
-      container.current.style.position = 'absolute'; // Ensure position is relative or absolute for left property to work
-      container.current.style.left = '805px'; // Move 100px to the left
-      container.current.style.top = '300px'; // Move 100px up
-
+      container.current.style.width = '700px'; 
+      container.current.style.height = '700px'; 
+      container.current.style.position = 'absolute'; 
+      container.current.style.left = '805px'; 
+      container.current.style.top = '550px'; 
     }
   }, [])
+  
   return (
     <div className="-mt-[6rem]">
       <motion.div variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}>
@@ -41,12 +41,16 @@ const About = ({index}) => {
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
-        I'm Byambabayar Baagii Avirmed, a driven Junior Front-End Web Developer currently pursuing my education at BCIT in Vancouver, BC, with graduation anticipated in May. Proficient in HTML, CSS, JavaScript, Tailwind, and various frameworks such as React and WordPress, I specialize in crafting visually captivating and user-friendly interfaces. My portfolio showcases projects that demonstrate my commitment to delivering high-quality web experiences, alongside problem-solving skills and a collaborative approach.
+        Hey there, I'm Byambabayar Baagii Avirmed! A driven Front-End Web Developer & UI UX Designer, recently graduated from BCIT in Vancouver, BC. With a background as a chef, I bring a unique perspective to my work, stemming from my previous experience in the culinary world. In both fields, attention to detail, creativity, and adaptability are essential, and I seamlessly apply these qualities to web development and design. <br></br>
+        <br></br>
+        My culinary journey has honed my sense of aesthetics and sharpened my time management skills, which I now bring to the digital realm. Proficient in HTML, CSS, JavaScript, Tailwind, and various frameworks such as React and WordPress, I specialize in crafting visually captivating and user-friendly interfaces.<br></br>
+        <br></br>
+        What drives me? It's the satisfaction of knowing that I've created something that enhances the user experience and exceeds client expectations. Whether it's troubleshooting a tricky layout or brainstorming innovative design solutions, I'm committed to delivering results that not only look great but also meet client's expectations.
       </motion.p>
       <motion.div variants={fadeIn('', '', 1.5, 1)}>
         <div ref={container} id="animation-container" className="hidden 2xl:block"></div>
       </motion.div>
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-16 flex flex-wrap gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

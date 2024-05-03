@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import { navLinks } from '../constants';
 import lottie from "lottie-web";
 import animation from "../utils/srh9OoKmhw.json";
-import SliderToggle from './Toggle'; // Import the SliderToggle component
+
 
 
 const Navbar = ({ selectedMode, setSelectedMode }) => {
@@ -79,7 +79,7 @@ const Navbar = ({ selectedMode, setSelectedMode }) => {
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
-          <SliderToggle selected={selectedMode} setSelected={setSelectedMode} />
+          {/* <SliderToggle selected={selectedMode} setSelected={setSelectedMode} /> */}
         </ul>
         
 

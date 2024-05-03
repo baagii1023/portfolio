@@ -26,10 +26,14 @@ const styles = {
       'text-eerieBlack font-black md:text-[60px] sm:text-[48px] xs:text-[40px] text-[30px] font-poppins',
     sectionHeadTextLight:
       'text-timberWolf font-black md:text-[60px] sm:text-[48px] xs:text-[40px] text-[30px] font-poppins',
+    sectionHeadTextLightDetail:
+    'text-timberWolf font-black md:text-[50px] sm:text-[48px] xs:text-[40px] text-[30px] font-poppins',
     sectionSubText:
       'sm:text-[18px] text-[16px] text-taupe uppercase tracking-wider font-semibold font-poppins',
-      sectionSubTextLight:
+    sectionSubTextLight:
       'mt-10 sm:text-[18px] text-[16px] text-gray-400 uppercase tracking-wider font-semibold font-poppins text-center',
+    contactSubText:
+      'sm:text-[18px] text-[16px] text-taupe tracking-wider font-semibold font-poppins text-black'
   
   };
   

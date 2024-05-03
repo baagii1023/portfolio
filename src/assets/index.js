@@ -36,6 +36,18 @@ import illustrator from './tech/illustrator.png';
 import nextjs from './tech/nextjs.png';
 import phython from './tech/phyton.png';
 import vue from './tech/vuejs.png';
+// Projects
+import blackjack from './projects/blackjack.png';
+import cineflix from './projects/cineflix.png';
+import calculator from './projects/fuel-calculator.png';
+import woostore from './projects/woostore.png';
+import portfolio from './projects/portfolio.png';
+import country from './projects/country-website.png';
+import bdw from './projects/bdw-massage.png';
+//Contact
+import linkedinlogo from './logo/linkedin-logo.png';
+import githublogo from './logo/github-logo.png';
+import maillogo from './logo/mail-logo.png';
 
 export {
     logo,
@@ -70,5 +82,15 @@ export {
     nextjs,
     phython,
     vue,
+    blackjack,
+    cineflix,
+    calculator,
+    woostore,
+    portfolio,
+    country,
+    linkedinlogo,
+    githublogo,
+    maillogo,
+    bdw,
 
 }; 

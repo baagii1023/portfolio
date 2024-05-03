@@ -21,13 +21,13 @@ const Hero = () => {
       })
       animationload.current = false
     }
-    // Adjust the size of the container element
+
     if (container.current) {
-      container.current.style.width = '200px'; // Set the width to your desired value
-      container.current.style.height = '200px'; // Set the height to your desired value
-      container.current.style.position = 'relative'; // Ensure position is relative or absolute for left property to work
-      container.current.style.left = '-85px'; // Move 100px to the left
-      container.current.style.top = '-70px'; // Move 100px up
+      container.current.style.width = '200px'; 
+      container.current.style.height = '200px'; 
+      container.current.style.position = 'relative'; 
+      container.current.style.left = '-85px'; 
+      container.current.style.top = '-70px'; 
 
     }
   }, [])
@@ -101,9 +101,8 @@ const Hero = () => {
             </div>
           </a>
         </div>
-
-        {/* Your image comes here. Feel free to remove image if you don't plan to have one.*/}
-        <div className="hidden sm:hidden md:hidden lg:block xl:block"> {/* Hide on screens smaller than 400 pixels */}
+        
+        <div className="hidden sm:hidden md:hidden lg:block xl:block"> 
           <img
             className="absolute bottom-0 ml-[50vw] 
             lg:ml-[75vw] md:ml-[60vw] xmd:ml-[60vw] 2xl:ml-[83vw]
