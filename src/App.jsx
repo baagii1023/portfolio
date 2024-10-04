@@ -1,8 +1,6 @@
-import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Detail from './components/Detail';
 import Home from './pages/home';
-
 
 function App() {
   return (

@@ -1,11 +1,14 @@
 import React,{ useRef, useEffect }from 'react';
-import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { motion } from "framer-motion";
-import { navLinks } from '../constants';
 import { Baagii_black, bwmap, worldmap } from '../assets';
 import lottie from "lottie-web";
 import animation from "../utils/J1Pa0XH7n5.json";
+import Plausible from 'plausible-tracker'
+
+const plausible = Plausible({
+  domain: 'baagiiavirmd.com'  // Corrected domain
+});
 
 const Hero = () => {
   const container = useRef(null); 
@@ -30,6 +33,8 @@ const Hero = () => {
       container.current.style.top = '-70px'; 
 
     }
+    // Track page view when the component mounts
+    plausible.trackPageview();
   }, [])
 
   return (

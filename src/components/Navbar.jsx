@@ -1,4 +1,3 @@
-//Navbar.jsx
 import React, { useRef, useEffect, useState } from 'react';
 import { styles } from '../styles';
 import { close, menu, logo, logotext } from '../assets';
@@ -6,16 +5,13 @@ import { Link } from 'react-router-dom';
 import { navLinks } from '../constants';
 import lottie from "lottie-web";
 import animation from "../utils/srh9OoKmhw.json";
-
-
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = ({ selectedMode, setSelectedMode }) => {
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
   const container = useRef(null); 
   const animationload = useRef(true);
-  
-
   
   useEffect(() => {
     if (animationload.current){
@@ -25,19 +21,17 @@ const Navbar = ({ selectedMode, setSelectedMode }) => {
         container: container.current,
         loop: false,
         renderer: "svg",
-        
       })
       animationload.current = false
     }
     // Adjust the size of the container element
     if (container.current) {
-      container.current.style.width = '50px'; // Set the width to your desired value
-      container.current.style.height = '50px'; // Set the height to your desired value
-      container.current.style.position = 'relative'; // Ensure position is relative or absolute for left property to work
-      container.current.style.left = '-10px'; // Move 100px to the left
+      container.current.style.width = '50px'; 
+      container.current.style.height = '50px'; 
+      container.current.style.position = 'relative'; 
+      container.current.style.left = '-10px'; 
     }
   }, [])
-  
   
   return (
     <nav
@@ -52,14 +46,12 @@ const Navbar = ({ selectedMode, setSelectedMode }) => {
             window.scrollTo(0, 0);
           }}>
           <img
-            src={logo} // your logo comes here
+            src={logo} 
             alt="logo"
             className="sm:w-[50px] sm:h-[50px] w-[45px] h-[45px] object-contain"
           />
-          
 
-          {/* if you have text you want besides your logo it comes here.
-          Otherwise delete this if you don't need it. */}
+          {/* aagii */}
           <img
             src={logotext}
             alt="logo"
@@ -76,13 +68,11 @@ const Navbar = ({ selectedMode, setSelectedMode }) => {
               } hover:text-taupe text-[21px] font-medium font-mova 
                 uppercase tracking-[3px] cursor-pointer nav-links`}
               onClick={() => setActive(nav.title)}>
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              <HashLink to={`/#${nav.id}`}>{nav.title}</HashLink>
             </li>
           ))}
-          {/* <SliderToggle selected={selectedMode} setSelected={setSelectedMode} /> */}
         </ul>
-        
-
+    
         {/* mobile */}
         <div className="sm:hidden flex flex-1 w-screen justify-end items-center">
           {toggle ? (
@@ -101,14 +91,15 @@ const Navbar = ({ selectedMode, setSelectedMode }) => {
               </div>
               <ul
                 className="list-none flex flex-col -gap-[1rem] 
-                items-start justify-end mt-[10rem] -ml-[35px]">
+                items-center justify-end mt-[10rem] -ml[35px]">
                 {navLinks.map((nav) => (
                   <li
                     id={nav.id}
                     key={nav.id}
+                    style={{ fontSize: '48px' }}
                     className={`${
                       active === nav.title ? 'text-french' : 'text-eerieBlack'
-                    } text-[88px] font-bold font-arenq 
+                    } text-[48px] font-bold font-arenq 
                       uppercase tracking-[1px] cursor-pointer`}
                     onClick={() => {
                       setToggle(!toggle);

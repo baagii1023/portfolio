@@ -131,5 +131,40 @@
   );
 }
 
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+.menu {
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.menu-open {
+  animation-name: slideIn;
+}
+
+.menu-close {
+  animation-name: slideOut;
+}
+
 
 

@@ -34,16 +34,16 @@ const Contact = () => {
 
   return (
     <div className="-mt-[6rem] mx-auto text-center">
-        <motion.div variants={textVariant()} className="mx-auto">
+        <motion.div variants={textVariant()} animate="visible" className="mx-auto">
             <p className={styles.sectionSubText}>Get in touch</p>
-            <div id="animation-container" className="relative">
+            <div id="animation-container" className="relative hidden md:block">
                 <div ref={container} className="absolute"></div>
             </div>
             <h2 className={styles.sectionHeadText}>Contact</h2>
         </motion.div>
         <motion.p
             variants={fadeIn('', '', 0.1, 1)}
-            className={`${styles.contactSubText} mt-20 mx-36 leading-18`}>Interested in working together? Let's connect! Whether you have a project in mind, want to discuss potential opportunities, or simply want to say hello. Your ideas, feedback, and questions are always welcome. Let's connect and explore how we can work together to bring your vision to life. <br></br>
+            className={`${styles.contactSubText} mt-20 sm:mx-2 md:mx-36 leading-18`}>Interested in working together? Let's connect! Whether you have a project in mind, want to discuss potential opportunities, or simply want to say hello. Your ideas, feedback, and questions are always welcome. Let's connect and explore how we can work together to bring your vision to life. <br></br>
             <br></br>
             Drop me a message below, and let's schedule a time to chat.
         </motion.p>

@@ -48,13 +48,11 @@ const Projects = () => {
   );
 };
 
-
-
 const ProjectCard = ({
   id,
   name,
   description,
-  image,
+  imagebw,
   demo,
   index,
   active,
@@ -72,7 +70,7 @@ const ProjectCard = ({
       h-full w-full opacity-[0.5] rounded-[24px]"></div>
 
       <img
-        src={image}
+        src={imagebw}
         alt={name}
         className="absolute w-full h-full object-cover rounded-[24px]"
       />
@@ -112,7 +110,7 @@ const ProjectCard = ({
               </button>
 
               <NavLink
-                to={`/Detail/${id}`} // Use the dynamic id here
+                to={`/Detail/${id}`} 
                 className="live-demo flex justify-center sm:text-[16px] text-[14px] text-timberWolf font-bold font-beckman items-center py-5 pl-2 pr-3 whitespace-nowrap gap-1 sm:w-[138px] sm:h-[50px] w-[125px] h-[46px] rounded-[10px] glassmorphism sm:mt-[22px] mt-[16px] hover:bg-[rgba(162,107,53,0.96)] transition duration-[0.2s] ease-in-out"
                 target="_blank">Details
               </NavLink>

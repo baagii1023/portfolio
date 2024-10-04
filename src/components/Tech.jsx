@@ -26,7 +26,6 @@ const Tech = () => {
         ))}
       </div>
 
-
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubTextLight}>Software and programs</p>
       </motion.div>

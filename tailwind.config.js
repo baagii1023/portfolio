@@ -25,9 +25,8 @@ export default {
         jet: '#292929',
         jetLight: '#333333',
         jetGray: '#6d6d74',
-        richBlack: '#2e2e2e',
         eerieBlack: '#1f1f1f',
-        onyx: '#5b5b5b',
+        
       },
       boxShadow: {
         card: '0px 35px 120px -15px #1f1f1f',
@@ -46,10 +45,6 @@ export default {
       backgroundImage: {
         about:
           'linear-gradient(165deg, rgba(244,244,246,1) 100%, rgba(122,122,122,1) 100%)',
-        experience:
-          "linear-gradient(135deg, rgba(244,244,246,0.5) 60%, rgba(10,10,10,0.2) 100%),url('/src/assets/backgrounds/white-abstract.png')",
-        experienceLight:
-          'linear-gradient(137deg, rgba(244,244,246,0.5) 60%, rgba(10,10,10,0.9) 60%)',
         hero: 'linear-gradient(135deg, rgba(244,244,246,0.8) 60%, rgba(10,10,10,0.95) 60%)',
         'hero-mobile':
           'linear-gradient(137deg, rgba(244,244,246,0.8) 60%, rgba(10,10,10,1) 60%)',

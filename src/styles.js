@@ -32,6 +32,8 @@ const styles = {
       'sm:text-[18px] text-[16px] text-taupe uppercase tracking-wider font-semibold font-poppins',
     sectionSubTextLight:
       'mt-10 sm:text-[18px] text-[16px] text-gray-400 uppercase tracking-wider font-semibold font-poppins text-center',
+    sectionSubTextDetail:
+      'mt-3 sm:text-[16px] text-[16px] text-gray-400 tracking-wider  font-poppins text-center',
     contactSubText:
       'sm:text-[18px] text-[16px] text-taupe tracking-wider font-semibold font-poppins text-black'
   
